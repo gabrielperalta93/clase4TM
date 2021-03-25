@@ -45,6 +45,18 @@ public class Main {
             for (int i = 0; i < enteros.length; i++){
                 System.out.println(enteros[i]);
             }
+            Time classTime = new Time();
+            classTime.start();
+            instancia.sort(enteros, comparadores);
+            classTime.end();
+            long time = classTime.totalTime();
+            for (int i = 0; i < enteros.length; i++){
+                System.out.println(enteros[i]);
+            }
+            System.out.println("Tiempo total: " + time);
+            //Bubble = mucho
+            //Quick = 124
+            //Heap = 220
         }catch (Exception e){
 
         }
